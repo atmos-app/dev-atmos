@@ -1,0 +1,63 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    font-size: calc(100vw / 1920 * 10);
+    line-height: 1;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+
+    @include media('<phone'){
+        font-size: calc(100vw / 390 * 10);
+    }
+}
+
+body{
+
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+img{
+    //     opacity: 0;
+    transition: 0.4s opacity ease;
+    //     vertical-align: middle;
+
+    //     &.loaded {
+        //        opacity: 1;
+        //     }
+}
+
+#app{
+    z-index: z('content');
+}
+
+canvas{
+    position: absolute;
+    z-index: z('canvas');
+}
+
+button{
+    color: inherit;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}

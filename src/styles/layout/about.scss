@@ -1,0 +1,130 @@
+
+.about_wrapper{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 25% 50% 25%; 
+    place-items: center;
+    background-color: $color_blue;
+    padding: 3rem;
+    color: $color_shark;
+    border-radius: 50px;
+
+    @include media('<phone') {
+        grid-template-rows: 10% 60% 30%;
+        border-radius: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.about_title{
+    grid-row: 2/3;
+    justify-self: end;
+    align-self: start;
+    font-size: 3rem;
+    padding-right: 3rem;
+    
+    @include media('<phone') {
+        font-size: 2rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.about_details{
+    justify-self: center;
+    align-self: start;
+    grid-row: 2/3;
+    grid-column: 2/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 70%;
+
+    @include media('<phone') {
+        grid-row: 2/3;
+        width: 90%;
+        justify-self: start;
+        gap: 3rem;
+
+    }
+}
+
+.about_details_para1{
+    font-size: 2rem;
+    font-weight: 300;
+
+    @include media('<phone') {
+        font-size: 1.4rem;
+    }
+}
+
+.about_details_para2{
+    font-size: 2rem;
+    font-weight: 300;
+
+    @include media('<phone') {
+        font-size: 1.4rem;
+    }
+}
+
+.about_links{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: start;
+    padding-right: 3rem;
+
+    @include media('<phone') {
+        justify-self: start;
+        padding-right: 0rem;
+    }
+}
+
+.about_links_ig{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    @include media('<phone') {
+        font-size: 1.6rem;
+    }
+}
+
+.about_developer{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: end;
+    align-self: start;
+
+    @include media('<phone') {
+        width: 70%;
+        position: absolute;
+        grid-column: 1/-1;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+.about_developer_text{
+    font-size: 2rem;
+    font-weight: 300;
+
+    @include media('<phone') {
+        font-size: 1.6rem;
+        text-align: right;
+    }
+}
+
+.about_developer_link{
+    font-size: 2rem;
+    font-style: italic;
+    @include media('<phone') {
+        font-size: 1.6rem;
+        
+    }
+}

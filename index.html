@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<title>ATMOS</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="description"
+		content="Connect with friends, fans and communities worldwide in visually stunning, immersive 3D spaces right from your smartphone, laptop or Meta Quest">
+	<meta name="robots" content="noindex,nofollow" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="logo_link" href="/">
+				<img class="logo_img" src="/c5-logo.png" alt="logo">
+				<h3 class="logo_text">Atmos</h3>
+			</a>
+			<a class="atmos_link" href="https://space.atmosapp.in">Open Atmos</a>
+			<h3 class="about_link">About</h3>
+		</nav>
+	</header>
+	<div class="container">
+		<section class="home_section">
+			<video class="home_video" src="/file.mp4" mute controls loop autoplay></video>
+		</section>
+		<section class="home_detail_section">
+			<h1 class="detail_one_title">Build your community with most immersive spaces</h1>
+			<img src="/C1.png" alt="" class="detail_one_img">
+		</section>
+		<section class="home_avatar_section">
+			<h1 class="detail_avatar_title">Create Your Virtual Identity</h1>
+			<p class="detail_avatar_para">Customize your Ready Player Me or life like avatar with thousands of combinations from leading brands including VOGUE, Adidas, The Fabricant, Dress X and more!</p>
+			<img src="/c4.png" alt="" class="detail_avatar_img">
+			<a class="detail_avatar_button" href="https://space.atmosapp.in">CREATE AVATAR</a>
+		</section>
+		<section class="atmos_club_section">
+			<h1 class="atmos_title">Atmos 3D spaces are organized into topic-based channels where you can collaborate, share, and just talk about your day with the virtual avatars</h1>
+			<img src="/C3.jpg" alt="" class="atmos_img">
+		</section>
+	</div>
+	<div class="about_wrapper">
+		<div class="about_title">ABOUT</div>
+		<div class="about_details">
+			<p class="about_details_para1">
+				Atmos is dedicated to helping creators and brands build their own spaces in the metaverse to share
+				culture together. We empower our users to leverage their beautiful spaces to share eye popping content,
+				build a tight knit community We also empower our users to create beautiful and functional 3D spaces and
+				avatars that they can looking to host mind blowing experiences.
+			</p>
+			<div class="about_details_para2">
+				The metaverse is an opportunity to empower creators to build their livelihood around the work. We see
+				The metaverse is also an opportunity for creators, their supporters, and their fans to interact more
+				closely than ever before. And the metaverse should be open and interoperable, where users can connect
+				their spaces easily to other platforms, and seamlessly bring content from one to another.
+			</div>
+		</div>
+		<div class="about_links"><a class="about_links_ig" href="https://www.instagram.com/atmos_app/"
+				target="_blank">INSTAGRAM</a></div>
+		<div class="about_developer">
+			<h2 class="about_developer_text">developed and designed by <a class="about_developer_link"
+					href="https://www.instagram.com/triiiye/" target="_blank">TRIIIYE</a></h2>
+		</div>
+	</div>
+	<footer>
+		<div class="footer_sect">
+			<h1 class="footer_title">Dive in</h1>
+			<div class="footer_btn_area">
+				<a class="btn_webapp">Download Web App</a>
+				<a class="btn_browser">Open in Browser</a>
+				<a class="btn_gplay">Play Store</a>
+				<a class="btn_appstore">App Store</a>
+				<a class="btn_metaquest">Meta Quest</a>
+			</div>
+		</div>
+	</footer>
+	<script type="module">
+		import './index.scss'
+		import About from './src/About.js'
+
+		const about  = new About()
+		about.setNone()
+		about.addEventListeners()
+
+	</script>
+</body>
+
+</html>
